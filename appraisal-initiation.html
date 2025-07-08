@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Appraisal Initiation</title>
+  <link rel="stylesheet" href="appraisal-initiation.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Sidebar toggle -->
+  <input type="checkbox" id="menu-toggle" hidden />
+
+  <!-- Header -->
+  <header class="bar">
+    <div class="logo">
+      <img src="logo_default_dark_compact.png" alt="Decibel HRMS" />
+    </div>
+    <div class="icons">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="fa-solid fa-bell"></i>
+      <i class="fa-solid fa-question"></i>
+      <label for="menu-toggle"><i class="fa-solid fa-bars"></i></label>
+    </div>
+  </header>
+
+  <div class="sidebar-container">
+  <div class="sidebar">
+    <div class="sidebar-header">
+      <span class="icon"><i class="fa-solid fa-chart-simple"></i></span>
+      <span class="title">Dashboard</span>
+      <label for="menu-toggle" class="close-btn">&times;</label>
+    </div>
+
+    <!-- Probation HR -->
+    <div class="menu-section">
+      <input type="checkbox" id="menu-probation-hr" hidden>
+      <label for="menu-probation-hr" class="menu-title">Probation HR</label>
+      <div class="submenus">
+        <input type="checkbox" id="submenu-setup" hidden>
+        <label for="submenu-setup" class="submenu-title">Setup</label>
+        <div class="submenu-items">
+          <a href="probation-initiation.html" class="submenu-item">- Probation Initiation</a>
+          <a href="probation-reversal.html" class="submenu-item">- Probation Reversal</a>
+          <a href="probation-deletion.html" class="submenu-item">- Probation Deletion</a>
+          <a href="probation-home.html" class="submenu-item">- Probation HR Home</a>
+        </div>
+
+        <input type="checkbox" id="submenu-reports" hidden>
+        <label for="submenu-reports" class="submenu-title">Reports</label>
+        <div class="submenu-items">
+          <a href="employee-probation-report.html" class="submenu-item">- Employee wise Probation (TAT)</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Probation EMP -->
+    <div class="menu-section">
+      <input type="checkbox" id="menu-probation-emp" hidden>
+      <label for="menu-probation-emp" class="menu-title">Probation EMP</label>
+      <div class="submenus">
+        <input type="checkbox" id="submenu-operations" hidden>
+        <label for="submenu-operations" class="submenu-title">Operations</label>
+        <div class="submenu-items">
+          <a href="probation-evaluation-by-emp.html" class="submenu-item">- Probation Evaluation by EMP</a>
+          <a href="probation-evaluation-by-lm.html" class="submenu-item">- Probation Evaluation by LM</a>
+          <a href="probation-review-by-emp.html" class="submenu-item">- Probation Review by EMP</a>
+          <a href="probation-approval-by-lmm.html" class="submenu-item">- Probation Approval by LMM</a>
+          <a href="probation-approval-by-hr.html" class="submenu-item">- Probation Approval by HR</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Performance HR -->
+    <div class="menu-section">
+      <input type="checkbox" id="menu-performance-hr" hidden>
+      <label for="menu-performance-hr" class="menu-title">Performance HR</label>
+      <div class="submenus">
+        <input type="checkbox" id="submenu-performance-setup" hidden>
+        <label for="submenu-performance-setup" class="submenu-title">Setup</label>
+        <div class="submenu-items">
+          <a href="performance-home.html" class="submenu-item">- Performance Home HR</a>
+          <a href="appraisal-initiation.html" class="submenu-item">- Appraisal Initiation</a>
+          <a href="goal-deletion.html" class="submenu-item">- Goal Deletion</a>
+          <a href="goal-reversal.html" class="submenu-item">- Goal Reversal</a>
+          <a href="appraisal-mapping.html" class="submenu-item">- Appraisal Type Mapping</a>
+        </div>
+
+        <input type="checkbox" id="submenu-performance-reports" hidden>
+        <label for="submenu-performance-reports" class="submenu-title">Reports</label>
+        <div class="submenu-items">
+          <a href="evaluation-form.html" class="submenu-item">- Employee Evaluation Form</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+  <!-- Main Content -->
+  <main class="form">
+    <h1>Performance Management</h1>
+    <div class="card">
+      <h2>Appraisal Initiation</h2>
+
+      <label for="company">Company Name</label>
+      <select id="company" name="company">
+        <option value="" disabled selected>- Please Select -</option>
+        <option value="annual">Descon</option>
+      </select>
+
+      <label for="category">Category</label>
+      <select id="category" name="category">
+        <option value="" disabled selected>- Please Select -</option>
+        <option>Reactive Appraisal</option>
+        <option>Proactive Appraisal</option>
+      </select>
+
+      <label for="appraisal">Appraisal Type</label>
+      <select id="appraisal" name="appraisal">
+        <option value="" disabled selected>- Please Select -</option>
+      </select>
+
+      <label for="date">Period From</label>
+      <input type="text" id="date" placeholder="- Select Date -" />
+
+      <label for="date">Period To</label>
+      <input type="text" placeholder="- Select Date -" />
+
+      <p class="search-by">Search by:</p>
+      <div class="radio">
+        <label><input type="radio" name="searchBy" />Work Location</label>
+        <label><input type="radio" name="searchBy" />Employee Name/Index/ID</label>
+      </div>
+
+      <label for="employee">Enter</label>
+      <input type="text" id="enter" />
+
+      <button class="btn">Search</button>
+
+      <label for="employee">Employee</label>
+      <select id="employee">
+        <option>- Please Select -</option>
+      </select>
+
+      <button class="btn-1">Get</button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p><a href="#">Privacy Policy for Decibel HRMS</a></p>
+    <p>Decibel HRMS. 2025 DecibelBpo. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

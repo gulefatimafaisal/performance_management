@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Performance Management</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Sidebar toggle -->
+  <input type="checkbox" id="menu-toggle" hidden>
+
+  <!-- Header -->
+  <header class="bar">
+    <div class="logo">
+      <img src="logo_default_dark_compact.png" alt="Decibel HRMS" />
+    </div>
+    <div class="icons">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="fa-solid fa-bell"></i>
+      <i class="fa-solid fa-question"></i>
+      <label for="menu-toggle"><i class="fa-solid fa-bars"></i></label>
+    </div>
+  </header>
+
+  <!-- Sidebar -->
+  <div class="sidebar-container">
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <span class="icon"><i class="fa-solid fa-chart-simple"></i></span>
+        <span class="title" style="color: white;">Dashboard</span>
+        <label for="menu-toggle" class="close-btn">&times;</label>
+      </div>
+
+      <!-- Probation HR -->
+      <input type="checkbox" id="menu-probation-hr" hidden>
+      <label for="menu-probation-hr" class="menu-title">Probation HR</label>
+      <div class="submenus">
+        <input type="checkbox" id="submenu-setup" hidden>
+        <label for="submenu-setup" class="submenu-title">Setup</label>
+        <div class="submenu-items">
+          <a href="probation-initiation.html" class="submenu-item">- Probation Initiation</a>
+          <a href="probation-reversal.html" class="submenu-item">- Probation Reversal</a>
+          <a href="probation-deletion.html" class="submenu-item">- Probation Deletion</a>
+          <a href="probation-hr-home.html" class="submenu-item">- Probation HR Home</a>
+        </div>
+
+        <input type="checkbox" id="submenu-reports" hidden>
+        <label for="submenu-reports" class="submenu-title">Reports</label>
+        <div class="submenu-items">
+          <a href="tat.html" class="submenu-item">- Employee wise Probation (TAT)</a>
+        </div>
+      </div>
+
+      <!-- Probation EMP -->
+      <input type="checkbox" id="menu-probation-emp" hidden>
+      <label for="menu-probation-emp" class="menu-title">Probation EMP</label>
+      <div class="submenus">
+        <input type="checkbox" id="submenu-operations" hidden>
+        <label for="submenu-operations" class="submenu-title">Operations</label>
+        <div class="submenu-items">
+          <a href="probation-evaluation-by-emp.html" class="submenu-item">- Probation Evaluation by EMP</a>
+          <a href="probation-evaluation-by-lm.html" class="submenu-item">- Probation Evaluation by LM</a>
+          <a href="probation-review-by-emp.html" class="submenu-item">- Probation Review by EMP</a>
+          <a href="probation-approval-by-lmm.html" class="submenu-item">- Probation Approval by LMM</a>
+          <a href="probation-approval-by-hr.html" class="submenu-item">- Probation Approval by HR</a>
+        </div>
+      </div>
+
+      <!-- Performance HR -->
+      <input type="checkbox" id="menu-performance-hr" hidden>
+      <label for="menu-performance-hr" class="menu-title">Performance HR</label>
+      <div class="submenus">
+        <input type="checkbox" id="submenu-performance-setup" hidden>
+        <label for="submenu-performance-setup" class="submenu-title">Setup</label>
+        <div class="submenu-items">
+          <a href="performance-home-hr.html" class="submenu-item">- Performance Home HR</a>
+          <a href="appraisal-initiation.html" class="submenu-item">- Appraisal Initiation</a>
+          <a href="goal-deletion.html" class="submenu-item">- Goal Deletion</a>
+          <a href="goal-reversal.html" class="submenu-item">- Goal Reversal</a>
+          <a href="appraisal-type-mapping.html" class="submenu-item">- Appraisal Type Mapping</a>
+        </div>
+
+        <input type="checkbox" id="submenu-performance-reports" hidden>
+        <label for="submenu-performance-reports" class="submenu-title">Reports</label>
+        <div class="submenu-items">
+          <a href="employee-goal-form.html" class="submenu-item">- Employee Evaluation Form</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="form">
+            <h1>Performance Management</h1>
+            <div class="card">
+                <h2>Performance management that fit your organization’s culture and deliver results</h2>
+
+
+                <div>
+                    <img src="CBS_Home.jpg">
+                </div>
+
+                <ul class="points">
+                    <li><span class="dot teal"></span>Keep talent on track with a performance management system that measures employee progress against your company’s larger vision.</li>
+                    <li><span class="dot yellow"></span>Our talent management services offer recruitment process automation, outsourcing and performance management.</li>
+                    <li><span class="dot pink"></span>Utilize proven performance management tools to improve your overall human capital management.</li>
+                </ul>
+            </div>
+        </main>
+
+        <div class="ra-form">
+        <div class="recent-activities">
+            <h3 class="ra-title">Recent Activities</h3>
+
+            <div class="ra-list">
+                <div class="ra-items">
+                    <div class="ra-time">13:45</div>
+                    <div class="line"></div>
+                    <div class="content">
+                        <div class="title">Performane Home HR</div>
+                        <div class="date">July 03, 2025</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ra-list">
+                <div class="ra-items">
+                    <div class="ra-time">11:02</div>
+                    <div class="line"></div>
+                    <div class="content">
+                        <div class="title">Appraisal Initiation</div>
+                        <div class="date">July 03, 2025</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ra-list">
+                <div class="ra-items">
+                    <div class="ra-time">11:00</div>
+                    <div class="line"></div>
+                    <div class="content">
+                        <div class="title">Goal Reversal</div>
+                        <div class="date">July 03, 2025</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ra-list">
+                <div class="ra-items">
+                    <div class="ra-time">17:38</div>
+                    <div class="line"></div>
+                    <div class="content">
+                        <div class="title">Client Review Setup</div>
+                        <div class="date">July 02, 2025</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ra-list">
+                <div class="ra-items">
+                    <div class="ra-time">12:04</div>
+                    <div class="line"></div>
+                    <div class="content">
+                        <div class="title">Employee Evaluation Form</div>
+                        <div class="date">July 02, 2025</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ra-list">
+                <div class="ra-items">
+                    <div class="ra-time">12:19</div>
+                    <div class="line"></div>
+                    <div class="content">
+                        <div class="title">Goal Deletion</div>
+                        <div class="date">June 30, 2025</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ra-list">
+                <div class="ra-items">
+                    <div class="ra-time">11:45</div>
+                    <div class="line"></div>
+                    <div class="content">
+                        <div class="title">Appraisal Type Mapping</div>
+                        <div class="date">June 30, 2025</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+
+
+    </main>
+
+    <footer>
+        <p><a href="#">Privacy Policy for Decibel HRMS</a></p>
+        <p>Decibel HRMS. 2025 DecibelBpo. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
