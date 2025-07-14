@@ -23,9 +23,21 @@ body {
 }
 
 .icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 8px;
+  vertical-align: middle;
   color: #0884c5;
   margin-left: 16px;
   font-size: 22px;
+  cursor: pointer;
+}
+
+.icons label{
+  color: #0884c5;
+  margin-top: 1px;
   cursor: pointer;
 }
 
