@@ -22,11 +22,23 @@ body{
     height: 40px;
 }
 
-.icons{
-    color: #0884c5;
-    margin-left: 16px;
-    font-size: 22px;
-    cursor: pointer;
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 8px;
+  vertical-align: middle;
+  color: #0884c5;
+  margin-left: 16px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.icons label{
+  color: #0884c5;
+  margin-top: 1px;
+  cursor: pointer;
 }
 
 .sidebar-container .sidebar {
@@ -61,6 +73,7 @@ body{
 }
 
 .sidebar-header .title {
+  color: #ffffff;
   flex: 1;
   text-align: center;
 }
@@ -72,6 +85,7 @@ body{
 }
 
 .menu-title {
+  color: #ffffff;
   font-size: 16px;
   font-weight: 500;
   margin: 10px 0;
@@ -80,6 +94,7 @@ body{
 }
 
 .submenus {
+  color: #ffffff;
   display: none;
   margin-left: 10px;
 }
@@ -89,6 +104,7 @@ input[type="checkbox"]:checked + .menu-title + .submenus {
 }
 
 .submenu-title {
+  color: #ffffff;
   font-size: 15px;
   font-weight: 500;
   margin: 8px 0;
@@ -97,6 +113,7 @@ input[type="checkbox"]:checked + .menu-title + .submenus {
 }
 
 .submenu-items {
+  color: #ffffff;
   display: none;
   margin-left: 15px;
 }
@@ -185,9 +202,10 @@ option{
     gap: 8px;
 }
 
-.radio input[type="radio"]{
-    margin-right: 8px;
-}    
+.radio input[type="radio"] {
+    margin-right: 8px; 
+}
+
 
 .btn{
     margin-top: 24px;
