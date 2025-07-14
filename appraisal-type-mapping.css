@@ -22,11 +22,120 @@ body{
     height: 40px;
 }
 
-.icons{
-    color: #0884c5;
-    margin-left: 16px;
-    font-size: 22px;
-    cursor: pointer;
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 8px;
+  vertical-align: middle;
+  color: #0884c5;
+  margin-left: 16px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.icons label{
+  color: #0884c5;
+  margin-top: 1px;
+  cursor: pointer;
+}
+
+.sidebar-container .sidebar {
+  background-color: #0884c5;
+  color: white;
+  width: 260px;
+  padding: 15px;
+  height: 100vh;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+#menu-toggle:checked ~ .sidebar-container .sidebar {
+  transform: translateX(0);
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.sidebar-header .icon {
+  font-size: 20px;
+}
+
+.sidebar-header .title {
+  color: #ffffff;
+  flex: 1;
+  text-align: center;
+}
+
+.sidebar-header .close-btn {
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+.menu-title {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px 0;
+  display: block;
+  cursor: pointer;
+}
+
+.submenus {
+  color: #ffffff;
+  display: none;
+  margin-left: 10px;
+}
+
+input[type="checkbox"]:checked + .menu-title + .submenus {
+  display: block;
+}
+
+.submenu-title {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 8px 0;
+  display: block;
+  cursor: pointer;
+}
+
+.submenu-items {
+  color: #ffffff;
+  display: none;
+  margin-left: 15px;
+}
+
+input[type="checkbox"]:checked + .submenu-title + .submenu-items {
+  display: block;
+}
+
+.submenu-item {
+  font-size: 14px;
+  padding: 5px 0;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.submenu-item:hover {
+  background-color: #e6f6fc;
+  color: #0884c5;
+  border-radius: 4px;
+  padding-left: 5px;
 }
 
 .form{
@@ -92,9 +201,10 @@ option{
     gap: 8px;
 }
 
-.radio input[type="radio"]{
-    margin-right: 8px;
-}  
+.radio input[type="radio"] {
+    margin-right: 8px; 
+}
+
 
 .btn{
     margin-top: 24px;
