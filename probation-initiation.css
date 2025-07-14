@@ -61,6 +61,7 @@ body{
 }
 
 .sidebar-header .title {
+  color: #ffffff;
   flex: 1;
   text-align: center;
 }
@@ -72,6 +73,7 @@ body{
 }
 
 .menu-title {
+  color: #ffffff;
   font-size: 16px;
   font-weight: 500;
   margin: 10px 0;
@@ -80,6 +82,7 @@ body{
 }
 
 .submenus {
+  color: #ffffff;
   display: none;
   margin-left: 10px;
 }
@@ -89,6 +92,7 @@ input[type="checkbox"]:checked + .menu-title + .submenus {
 }
 
 .submenu-title {
+  color: #ffffff;
   font-size: 15px;
   font-weight: 500;
   margin: 8px 0;
@@ -97,6 +101,7 @@ input[type="checkbox"]:checked + .menu-title + .submenus {
 }
 
 .submenu-items {
+  color: #ffffff;
   display: none;
   margin-left: 15px;
 }
@@ -185,9 +190,10 @@ option{
     gap: 8px;
 }
 
-.radio input[type="radio"]{
-    margin-right: 8px;
-}  
+.radio input[type="radio"] {
+    margin-right: 8px; 
+}
+
 
 .btn{
     margin-top: 24px;
